@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Lavanderia App
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,40 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Lavanderia App</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <ion-img src="../../assets/10061.png" style="margin: 50px;   border-radius: 50%;
+          " alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+          <strong>Login Access</strong>
+          <div class="padding: 50px">
+            <p style="margin-bottom:60px">Ingresa tus datos para iniciar sesion <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"></a></p>
+            <ion-list>
+              
+              <ion-item>
+                <ion-label position="stacked">usuario</ion-label>
+                <ion-input [clearOnEdit]="true" placeholder="nombre de usuario"></ion-input>
+              </ion-item>
+            
+              <ion-item style="margin-bottom:60px">
+                <ion-label position="stacked">Password </ion-label>
+                <ion-input type="password" placeholder="******"></ion-input>
+              </ion-item>
+              <ion-button style="margin:35px" expand="block">Ingresar</ion-button>
+              <ion-button fill="outline" style="margin: 30px 50px" expand="block">Registrarse</ion-button>
+      
+            </ion-list>
+            <p>¿Olvidaste tus datos? <br> <a target="_blank" style="margin-top: 35px;" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">Recuperar Contraseña</a></p>
+            
+          </div>
+        </ion-col>       
+      </ion-row>
+    </ion-grid>   
+    
   </div>
 </ion-content>

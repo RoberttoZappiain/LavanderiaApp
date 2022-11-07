@@ -1,0 +1,98 @@
+<ion-menu contentId="main-content">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>      Lavanderia App
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true" class="ion-padding"><ion-list>
+    <ion-item>
+      <ion-label>Lavado</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Secado</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Planchado</ion-label>
+    </ion-item>
+   
+  </ion-list></ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title size="large" style="margin: 5px 35px;">Solicitar Servicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+    
+    <ion-text color="primary" style="margin-left: 10%;">
+      <h1 style="margin-left: 10%;">Ubicacion:</h1>
+    </ion-text>
+    <ion-item style="margin-left: 5%; margin-right: 10%;">
+      <ion-label position="stacked"></ion-label>
+      <ion-input [clearOnEdit]="true" placeholder="Dom: "></ion-input>
+    </ion-item>
+    <ion-item style="margin-left: 5%; margin-right: 10%;">
+      <ion-label position="stacked"></ion-label>
+      <ion-input [clearOnEdit]="true" placeholder="Colonia: "></ion-input>
+    </ion-item>
+    <ion-item style="margin-left: 5%; margin-right: 10%;">
+      <ion-label position="stacked"></ion-label>
+      <ion-input [clearOnEdit]="true" placeholder="Codigo Postal: "></ion-input>
+    </ion-item>
+    <ion-item style="margin-left: 5%; margin-right: 10%;">
+      <ion-label position="stacked"></ion-label>
+      <ion-input [clearOnEdit]="true" placeholder="Hora: "></ion-input>
+    </ion-item>
+    <ion-item style="margin-left: 5%; margin-right: 10%;">
+      <ion-label position="stacked"></ion-label>
+      <ion-input [clearOnEdit]="true" placeholder="Dia (fecha): "></ion-input>
+    </ion-item>
+    <ion-item style="margin-left: 5%; margin-right: 10%;">
+      <ion-label position="stacked"></ion-label>
+      <ion-input [clearOnEdit]="true" placeholder="Dom: "></ion-input>
+    </ion-item>
+    <ion-list style="margin-left: 5%; margin-right: 10%;">
+      <ion-item>
+        <ion-select placeholder="Servicios" [multiple]="true" style="text-align: left;">
+          <ion-select-option value="Lavado">Lavado</ion-select-option>
+          <ion-select-option value="Secado">Secado</ion-select-option>
+          <ion-select-option value="Planchado">Planchado</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="block" style="margin: 35px 55px">Enviar Solicitud</ion-button>
+
+  </div>
+
+
+  <ion-content class="ion-padding">
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="pin">
+          <ion-icon name="pin"></ion-icon>
+          <ion-label>Ubicacion</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="mail">
+          <ion-icon name="mail"></ion-icon>
+          <ion-label>Mensajes</ion-label>
+          <ion-badge>6</ion-badge>
+
+        </ion-tab-button>
+    
+        
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-content>
+</div>
+

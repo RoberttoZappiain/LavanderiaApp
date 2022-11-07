@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'homescreen',
+    loadChildren: () => import('./homescreen/homescreen.module').then( m => m.HomescreenPageModule)
+  },
+  {
+    path: 'servicio-nuevo',
+    loadChildren: () => import('./servicio-nuevo/servicio-nuevo.module').then( m => m.ServicioNuevoPageModule)
+  },
+  {
+    path: 'servicios',
+    loadChildren: () => import('./servicios/servicios.module').then( m => m.ServiciosPageModule)
+  },
 ];
 
 @NgModule({

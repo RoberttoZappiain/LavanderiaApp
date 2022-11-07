@@ -1,0 +1,35 @@
+
+
+  ion-card {
+    --background: #062b33;
+    --color: #9efff0;
+  }
+  
+  ion-card.background {
+    --background: url(https://images.hola.com/imagenes/decoracion/20211119199908/trucos-lavadora-y-secadora-eficientes-mc/1-21-660/lavadora-eficiente-t.jpg) 0 0/100% 100% no-repeat;
+    --color: #9efff0;
+  }
+
+  ion-card.background2 {
+    --background: url(https://t4.ftcdn.net/jpg/03/21/93/57/360_F_321935790_FGEHUAg40ASYEiAodd7xJIkJVit9eOoj.jpg) 0 0/100% 100% no-repeat;
+    --color: #9efff0;
+  }
+  ion-card.background3 {
+    --background: url(https://img.freepik.com/fotos-premium/plancha-camisa-electrica-servicio-lavanderia-planchado_93675-63306.jpg?w=2000) 0 0/100% 100% no-repeat;
+    --color: #9efff0;
+  }
+  ion-card-title {
+    
+    --color: #64a2ff;
+    text-align: center;
+  }
+  
+  ion-card-subtitle {
+    --color: #d1fff8;
+  }
+  
+  /* iOS places the subtitle above the title */
+  ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
